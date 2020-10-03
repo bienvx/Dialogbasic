@@ -1,0 +1,22 @@
+        //Create Object
+        AlertDialog.Builder b = new AlertDialog.Builder(self);
+        //Title
+        b.setTitle("You need logout?");
+
+        b.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                //what do you want ?
+            }
+        });
+
+        //Button Cancel
+        b.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+            }
+        });
+        //Create Dialog
+        AlertDialog al = b.create();
+
+        al.show();
